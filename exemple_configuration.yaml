@@ -1,0 +1,50 @@
+/*** Exemple pour deux lyres wash 9 canaux ***/
+/*** La doc se trouve chez le créateur du plugin: https://github.com/jnimmo/hass-dmx ***/
+
+# DMX
+light:
+  - platform: dmx
+    host: 192.168.0.63
+    dmx_channels: 512
+    universe: 0
+    devices:
+      - channel: 1
+        name: Lyre_1_pan
+        type: dimmer
+        default_level: 0
+      - channel: 2
+        name: Lyre_1_tilt
+        type: dimmer
+        default_level: 0
+      - channel: 3
+        name: Lyre_1_couleur
+        type: drgbw
+        default_level: 0
+      - channel: 8
+        name: Lyre_1_strobe
+        type: dimmer
+        default_level: 0
+      - channel: 9
+        name: Lyre_1_speed
+        type: dimmer
+        default_level: 0
+      - channel: 10
+        name: Lyre_2_pan
+        type: dimmer
+        default_level: 0
+      - channel: 11
+        name: Lyre_2_tilt
+        type: dimmer
+        default_level: 0
+      - channel: 12
+        name: Lyre_2_couleur
+        type: drgbw
+        default_level: 0
+      - channel: 17
+        name: Lyre_2_strobe
+        type: dimmer
+        default_level: 0
+      - channel: 18
+        name: Lyre_2_speed
+        type: dimmer
+        default_level: 0
